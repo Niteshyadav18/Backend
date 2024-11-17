@@ -1,0 +1,16 @@
+{
+  "name": "backendjs",
+  "version": "1.0.0",
+  "description": "Learning Backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nitz",
+    "javascript",
+    "backend"
+  ],
+  "author": "Nitesh Yadav",
+  "license": "ISC"
+}

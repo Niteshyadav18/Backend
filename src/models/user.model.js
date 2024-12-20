@@ -71,11 +71,11 @@ userSchema.pre("save", async function(next){
                 _id:this._id,
                 email:this.email,
                 userName:this.username,
-                fullName:this.fullname
+                fullName:this.fullName
             },
             procces.env.ACCESS_TOKEN_SECRET,
             {
-                expiresIn: procces.env.ACCESS_TOKEN_EXPIRY
+                expiresIn: process.env.ACCESS_TOKEN_EXPIRY
             }
         )
 
@@ -87,9 +87,9 @@ userSchema.pre("save", async function(next){
                 _id:this._id,
                
             },
-            procces.env.REFRESH_TOKEN_SECRET,
+            process.env.REFRESH_TOKEN_SECRET,
             {
-                expiresIn: procces.env.REFRESH_TOKEN_EXPIRY
+                expiresIn: process.env.REFRESH_TOKEN_EXPIRY
             }
         )
 

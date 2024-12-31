@@ -29,7 +29,7 @@ const userSchema = new Schema(
         
         avatar:{
             type: String,  //Cloudinary url
-            required: true,
+             required: true,
         },
         coverImage:{
             type: String,  //Cloudinary url
@@ -73,7 +73,7 @@ userSchema.pre("save", async function(next){
                 userName:this.username,
                 fullName:this.fullName
             },
-            procces.env.ACCESS_TOKEN_SECRET,
+            process.env.ACCESS_TOKEN_SECRET,
             {
                 expiresIn: process.env.ACCESS_TOKEN_EXPIRY
             }

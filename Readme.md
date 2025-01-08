@@ -1,1 +1,1 @@
-# Learning Backend From Chai ur Code .
+# Learning Backend From Chai or Code .

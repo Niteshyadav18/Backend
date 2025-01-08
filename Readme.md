@@ -38,27 +38,22 @@ MongoDB (locally or through a service like MongoDB Atlas)
 Steps:
 Clone the repository:
 
-bash
-Copy code
 git clone https://github.com/yourusername/your-repository-name.git
 Install dependencies:
 
-bash
-Copy code
+
 cd your-repository-name
 npm install
 Set up environment variables in a .env file:
 
-env
-Copy code
+
 PORT=5000
 MONGO_URI=your-mongodb-connection-string
 JWT_SECRET=your-jwt-secret
 CLOUDINARY_URL=your-cloudinary-url
 Start the development server:
 
-bash
-Copy code
+
 npm run dev
 The server will now be running on http://localhost:5000.
 
@@ -68,8 +63,6 @@ Registers a new user.
 
 Body:
 
-json
-Copy code
 {
   "username": "user123",
   "email": "user@example.com",
@@ -80,8 +73,7 @@ Logs in a user and returns an access token.
 
 Body:
 
-json
-Copy code
+
 {
   "email": "user@example.com",
   "password": "password123"
@@ -94,8 +86,6 @@ Allows users to update their avatar image.
 
 Body:
 
-json
-Copy code
 {
   "avatarUrl": "new-avatar-url"
 }
@@ -104,10 +94,11 @@ Allows users to update their cover image.
 
 Body:
 
-json
-Copy code
+
 {
   "coverImageUrl": "new-cover-image-url"
 }
+
+
 Contributing
 Feel free to fork this project, open issues, and submit pull requests. Contributions are welcome!
